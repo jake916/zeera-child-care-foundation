@@ -1,65 +1,154 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import CausesGrid from "@/components/CausesGrid";
+import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        
+        {/* About/Mission Section */}
+        <ScrollReveal>
+          <section id="about" className="py-24 bg-card-bg relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+               <div className="relative h-[600px] rounded-[2rem] overflow-hidden border border-black/5 shadow-2xl">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center transition-all duration-700" 
+                    style={{ backgroundImage: `url('/adorable-african-black-kids.jpg')` }}
+                  />
+               </div>
+               <div>
+                  <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">Our Mission</h2>
+                  <h3 className="text-4xl md:text-5xl font-extrabold text-foreground mb-8 leading-tight">
+                    Healthcare should never be a privilege. <br /> 
+                    <span className="text-primary">For a child, it's a right.</span>
+                  </h3>
+                  <p className="text-foreground/60 text-lg mb-10 leading-relaxed">
+                    Zera Childcare Foundation was born from a simple but urgent question: 
+                    what happens to a child whose parents cannot afford treatment when illness strikes? 
+                    We exist to answer that question with action.
+                  </p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                     <div>
+                        <div className="text-3xl font-black text-foreground mb-1">68+</div>
+                        <div className="text-[10px] text-foreground/40 uppercase tracking-widest font-bold">Children supported</div>
+                     </div>
+                     <div>
+                        <div className="text-3xl font-black text-foreground mb-1">2021</div>
+                        <div className="text-[10px] text-foreground/40 uppercase tracking-widest font-bold">Founded</div>
+                     </div>
+                     <div>
+                        <div className="text-3xl font-black text-foreground mb-1">Lagos</div>
+                        <div className="text-[10px] text-foreground/40 uppercase tracking-widest font-bold">Based in Nigeria</div>
+                     </div>
+                     <div>
+                        <div className="text-3xl font-black text-foreground mb-1">2</div>
+                        <div className="text-[10px] text-foreground/40 uppercase tracking-widest font-bold">Programmes</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <CausesGrid />
+        </ScrollReveal>
+
+        {/* Testimonials Section */}
+        <ScrollReveal>
+          <section id="impact" className="py-24 bg-background">
+            <div className="max-w-7xl mx-auto px-6">
+              {/* Header */}
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
+                <div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-2.5 h-2.5 rounded-full bg-[#10b981]" />
+                    <span className="text-sm font-semibold text-foreground/80">Testimonials</span>
+                  </div>
+                  <h3 className="text-4xl md:text-6xl font-bold text-foreground">Stories Bringing Hope</h3>
+                </div>
+                <div className="max-w-md">
+                  <p className="text-foreground/60 text-lg leading-relaxed">
+                    Real stories from those we've helped and those who help sharing the hope & heart.
+                  </p>
+                </div>
+              </div>
+
+              {/* Testimonial Card */}
+              <div className="relative rounded-[2.5rem] overflow-hidden min-h-[600px] shadow-2xl group">
+                <Image 
+                  src="/close-up-cute-little-girl-portrait.jpg" 
+                  alt="Impact Story" 
+                  fill
+                  className="object-cover"
+                />
+                {/* Gradient Overlay for Text Readability */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/40 to-transparent" />
+                
+                <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-center">
+                  <div className="max-w-2xl">
+                    <p className="text-2xl md:text-4xl text-white font-bold leading-tight mb-8">
+                      The child's mum was so distressed. But because of this foundation last time I called, she said the child is walking fine now.
+                    </p>
+                    <p className="text-white/80 text-xl font-medium">
+                      - Nurse Chukwura, <span className="text-primary/80">LASUTH Paediatric Unit</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
+        {/* CTA Section */}
+        <ScrollReveal>
+          <section className="py-12 px-6 overflow-hidden">
+             <div className="max-w-7xl mx-auto bg-primary rounded-[3rem] p-8 md:py-12 md:px-16 relative overflow-hidden shadow-2xl shadow-primary/20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                   <div className="relative z-10 text-center md:text-left">
+                      <h2 className="text-4xl md:text-6xl font-black text-black mb-6 leading-tight">
+                        Ready to make <br /> 
+                        <span className="text-white">a difference?</span>
+                      </h2>
+                      <p className="text-black/70 text-lg md:text-xl mb-8 font-medium max-w-lg mx-auto md:mx-0">
+                        Your support can provide a child with medical care, clean water, 
+                        and a hope for the future. Start today.
+                      </p>
+                      <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
+                         <button className="w-full sm:w-auto bg-secondary text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-secondary/40">
+                            Donate Now
+                         </button>
+                         <button className="w-full sm:w-auto bg-white/20 backdrop-blur-md text-black border border-white/30 px-10 py-5 rounded-full font-bold text-xl hover:bg-white/30 transition-all">
+                            Volunteer
+                         </button>
+                      </div>
+                   </div>
+                   
+                   <div className="relative flex justify-center items-center">
+                      <div className="relative w-full max-w-[600px] aspect-square rounded-3xl overflow-hidden shadow-2xl md:-mr-20 lg:-mr-32 border-4 border-white/20">
+                         <Image 
+                           src="/medium-shot-smiley-kid-outdoors.jpg" 
+                           alt="Smiley Kid" 
+                           fill
+                           className="object-cover"
+                         />
+                      </div>
+                   </div>
+                </div>
+                
+                {/* Decorative background circle */}
+                <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+             </div>
+          </section>
+        </ScrollReveal>
       </main>
+      <Footer />
     </div>
   );
 }
