@@ -10,7 +10,7 @@ export default function DonatePage() {
          <Navbar />
          <main>
             {/* Cinematic Hero */}
-            <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden">
                <div className="absolute inset-0 z-0">
                   <Image
                      src="/close-up-community-concept-with-hands.jpg"
@@ -33,7 +33,7 @@ export default function DonatePage() {
                      </p>
                   </ScrollReveal>
                </div>
-               <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+               <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
                   <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
                      <div className="w-1 h-2 bg-white rounded-full" />
                   </div>

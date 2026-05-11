@@ -10,7 +10,7 @@ export default function ProgrammesPage() {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
               src="/close-up-community-concept-with-hands.jpg" 
@@ -30,7 +30,7 @@ export default function ProgrammesPage() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
               <div className="w-1 h-2 bg-white rounded-full" />
             </div>
@@ -86,27 +86,27 @@ export default function ProgrammesPage() {
 
             {/* Outreach Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-               <ScrollReveal delay={100} className="bg-background p-8 rounded-[2.5rem] border border-black/5">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Surgeries</h4>
-                  <p className="text-foreground/60 text-sm leading-relaxed">
+               <ScrollReveal delay={100} className="bg-background p-8 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group duration-500">
+                  <h4 className="text-xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Surgeries</h4>
+                  <p className="text-foreground/60 text-sm leading-relaxed group-hover:text-black/80 transition-colors">
                     We fund emergency and scheduled surgical procedures for children whose families cannot bear the cost.
                   </p>
                </ScrollReveal>
-               <ScrollReveal delay={200} className="bg-background p-8 rounded-[2.5rem] border border-black/5">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Medications</h4>
-                  <p className="text-foreground/60 text-sm leading-relaxed">
+               <ScrollReveal delay={200} className="bg-background p-8 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group duration-500">
+                  <h4 className="text-xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Medications</h4>
+                  <p className="text-foreground/60 text-sm leading-relaxed group-hover:text-black/80 transition-colors">
                     We purchase essential medications that families are unable to afford, ensuring no child goes without treatment.
                   </p>
                </ScrollReveal>
-               <ScrollReveal delay={300} className="bg-background p-8 rounded-[2.5rem] border border-black/5">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Tests & Scans</h4>
-                  <p className="text-foreground/60 text-sm leading-relaxed">
-                    We cover the cost of medical investigations — blood tests, scans, and diagnostics — critical to accurate diagnosis.
+               <ScrollReveal delay={300} className="bg-background p-8 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group duration-500">
+                  <h4 className="text-xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Tests & Scans</h4>
+                  <p className="text-foreground/60 text-sm leading-relaxed group-hover:text-black/80 transition-colors">
+                    We cover the cost of medical investigations blood tests, scans, and diagnostics critical to accurate diagnosis.
                   </p>
                </ScrollReveal>
-               <ScrollReveal delay={400} className="bg-background p-8 rounded-[2.5rem] border border-black/5">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Unpaid Bills</h4>
-                  <p className="text-foreground/60 text-sm leading-relaxed">
+               <ScrollReveal delay={400} className="bg-background p-8 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group duration-500">
+                  <h4 className="text-xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Unpaid Bills</h4>
+                  <p className="text-foreground/60 text-sm leading-relaxed group-hover:text-black/80 transition-colors">
                     We settle outstanding hospital bills for children who have been medically discharged but remain in the ward.
                   </p>
                </ScrollReveal>
@@ -130,7 +130,7 @@ export default function ProgrammesPage() {
                       this gap, connecting children with therapy and specialist support.
                     </p>
                     <p>
-                      We focus particularly on timely interventions — because for many conditions, early support 
+                      We focus particularly on timely interventions because for many conditions, early support 
                       makes the difference between a child who develops fully and one who is left behind.
                     </p>
                   </div>

@@ -10,7 +10,7 @@ export default function AboutPage() {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
               src="/medium-shot-boys-hugging.jpg" 
@@ -30,7 +30,7 @@ export default function AboutPage() {
           </div>
           
           {/* Scroll Indicator */}
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
               <div className="w-1 h-2 bg-white rounded-full" />
             </div>
@@ -136,26 +136,26 @@ export default function AboutPage() {
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <ScrollReveal delay={100} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:shadow-xl transition-all">
-                <h4 className="text-2xl font-bold text-foreground mb-4">Transparency</h4>
-                <p className="text-foreground/60 leading-relaxed">
+              <ScrollReveal delay={100} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group ">
+                <h4 className="text-2xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Transparency</h4>
+                <p className="text-foreground/60 leading-relaxed group-hover:text-black/80 transition-colors">
                   We are open about where every naira goes. Donors, partners, and families can trust 
                   that our resources go directly to the children who need them.
                 </p>
               </ScrollReveal>
 
-              <ScrollReveal delay={200} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:shadow-xl transition-all">
-                <h4 className="text-2xl font-bold text-foreground mb-4">Service with Honour</h4>
-                <p className="text-foreground/60 leading-relaxed">
+              <ScrollReveal delay={200} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group ">
+                <h4 className="text-2xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Service with Honour</h4>
+                <p className="text-foreground/60 leading-relaxed group-hover:text-black/80 transition-colors">
                   We serve not out of obligation but out of deep conviction. Every child we support 
                   is treated with dignity not as a recipient of pity, but as a life worthy of the 
                   best care available.
                 </p>
               </ScrollReveal>
 
-              <ScrollReveal delay={300} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:shadow-xl transition-all">
-                <h4 className="text-2xl font-bold text-foreground mb-4">Faith in God</h4>
-                <p className="text-foreground/60 leading-relaxed">
+              <ScrollReveal delay={300} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group duration-500">
+                <h4 className="text-2xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Faith in God</h4>
+                <p className="text-foreground/60 leading-relaxed group-hover:text-black/80 transition-colors">
                   Our foundation is rooted in the belief that every human life is sacred and worth 
                   fighting for. This faith drives our commitment and sustains our work.
                 </p>

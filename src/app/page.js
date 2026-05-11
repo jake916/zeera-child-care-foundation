@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import CausesGrid from "@/components/CausesGrid";
@@ -74,9 +75,13 @@ export default function Home() {
                   <h3 className="text-4xl md:text-6xl font-bold text-foreground">Stories Bringing Hope</h3>
                 </div>
                 <div className="max-w-md">
-                  <p className="text-foreground/60 text-lg leading-relaxed">
+                  <p className="text-foreground/60 text-lg leading-relaxed mb-6">
                     Real stories from those we've helped and those who help sharing the hope & heart.
                   </p>
+                  <Link href="/impact" className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+                    Read More Impact Stories
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12H19M19 12L12 5M19 12L12 19" /></svg>
+                  </Link>
                 </div>
               </div>
 
@@ -121,12 +126,16 @@ export default function Home() {
                         and a hope for the future. Start today.
                       </p>
                       <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
-                         <button className="w-full sm:w-auto bg-secondary text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-secondary/40">
-                            Donate Now
-                         </button>
-                         <button className="w-full sm:w-auto bg-white/20 backdrop-blur-md text-black border border-white/30 px-10 py-5 rounded-full font-bold text-xl hover:bg-white/30 transition-all">
-                            Volunteer
-                         </button>
+                         <Link href="/donate" className="w-full sm:w-auto">
+                           <button className="w-full bg-secondary text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-secondary/40">
+                              Donate Now
+                           </button>
+                         </Link>
+                         <Link href="/contact" className="w-full sm:w-auto">
+                           <button className="w-full bg-white/20 backdrop-blur-md text-black border border-white/30 px-10 py-5 rounded-full font-bold text-xl hover:bg-white/30 transition-all">
+                              Volunteer
+                           </button>
+                         </Link>
                       </div>
                    </div>
                    

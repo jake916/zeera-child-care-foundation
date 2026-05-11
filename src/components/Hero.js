@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 const images = [
   "/young-african-children-outdoor.jpg",
@@ -44,16 +45,20 @@ const Hero = () => {
           </h1>
 
           <p className="text-base text-white/80 max-w-sm mb-10 leading-relaxed font-medium">
-            We stand in the gap for vulnerable children who cannot access the medical care they need—one child at a time.
+            We stand in the gap for vulnerable children who cannot access the medical care they need one child at a time.
           </p>
 
           <div className="flex flex-col gap-4 w-full">
-            <button className="bg-secondary text-white py-5 rounded-full font-bold text-lg active:scale-95 transition-transform uppercase tracking-widest shadow-xl shadow-secondary/20">
-              Donate Today
-            </button>
-            <button className="bg-white text-secondary py-5 rounded-full font-bold text-lg active:scale-95 transition-transform uppercase tracking-widest">
-              See Our Work
-            </button>
+            <Link href="/donate" className="w-full">
+              <button className="w-full bg-secondary text-white py-5 rounded-full font-bold text-lg active:scale-95 transition-transform uppercase tracking-widest shadow-xl shadow-secondary/20">
+                Donate Today
+              </button>
+            </Link>
+            <Link href="/impact" className="w-full">
+              <button className="w-full bg-white text-secondary py-5 rounded-full font-bold text-lg active:scale-95 transition-transform uppercase tracking-widest">
+                See Our Work
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -82,15 +87,18 @@ const Hero = () => {
           </p>
 
           <div className="flex items-center justify-center gap-8">
-            <button className="bg-secondary text-white px-12 py-6 rounded-full font-black text-xl hover:scale-110 transition-all hover:shadow-[0_0_50px_rgba(255,87,51,0.4)] uppercase tracking-widest">
-              Donate Today
-            </button>
-            <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-12 py-6 rounded-full font-black text-xl hover:bg-white hover:text-black transition-all uppercase tracking-widest">
-              See Our Work
-            </button>
+            <Link href="/donate">
+              <button className="bg-secondary text-white px-12 py-6 rounded-full font-black text-xl hover:scale-110 transition-all hover:shadow-[0_0_50px_rgba(255,87,51,0.4)] uppercase tracking-widest">
+                Donate Today
+              </button>
+            </Link>
+            <Link href="/impact">
+              <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-12 py-6 rounded-full font-black text-xl hover:bg-white hover:text-black transition-all uppercase tracking-widest">
+                See Our Work
+              </button>
+            </Link>
           </div>
         </div>
-
       </div>
     </section>
   );

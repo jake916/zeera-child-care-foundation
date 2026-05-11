@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const causes = [
   {
@@ -12,8 +13,8 @@ const causes = [
   {
     id: 2,
     title: "Special Needs Intervention",
-    tagline: "Every child deserves to thrive — not just survive.",
-    description: "We support children with special needs from underserved communities — particularly those who need timely intervention to improve their quality of life. Speech therapy, occupational therapy, and specialist care, made accessible.",
+    tagline: "Every child deserves to thrive not just survive.",
+    description: "We support children with special needs from underserved communities particularly those who need timely intervention to improve their quality of life. Speech therapy, occupational therapy, and specialist care, made accessible.",
     image: "/african-kid-marketplace.jpg",
   },
 ];
@@ -30,9 +31,9 @@ const CausesGrid = () => {
               <span className="text-primary">Real impact.</span>
             </h3>
           </div>
-          <button className="text-foreground font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors">
+          <Link href="/programmes" className="text-foreground font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors">
             Learn More About Our Work
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -59,9 +60,11 @@ const CausesGrid = () => {
                 </p>
                 
                 <div className="mt-auto">
-                   <button className="w-full py-4 bg-primary/5 border border-primary/10 rounded-2xl font-bold hover:bg-secondary hover:text-white hover:border-secondary transition-all text-foreground hover:text-white">
-                     Support this Programme
-                   </button>
+                   <Link href="/programmes">
+                     <button className="w-full py-4 bg-primary/5 border border-primary/10 rounded-2xl font-bold hover:bg-secondary hover:text-white hover:border-secondary transition-all text-foreground hover:text-white">
+                       Support this Programme
+                     </button>
+                   </Link>
                 </div>
               </div>
             </div>

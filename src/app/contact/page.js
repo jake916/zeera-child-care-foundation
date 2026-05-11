@@ -10,7 +10,7 @@ export default function ContactPage() {
       <Navbar />
       <main>
         {/* Cinematic Hero */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
               src="/medium-shot-woman-wearing-halal-outdoors.jpg" 
@@ -24,11 +24,11 @@ export default function ContactPage() {
             <ScrollReveal>
               <h1 className="text-6xl md:text-9xl font-black text-white mb-8 tracking-tighter">Contact Us</h1>
               <p className="text-white/80 text-xl md:text-3xl max-w-3xl mx-auto leading-tight font-medium">
-                Reach out. We're listening.
+                Reach out. We are listening.
               </p>
             </ScrollReveal>
           </div>
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
               <div className="w-1 h-2 bg-white rounded-full" />
             </div>
@@ -107,6 +107,63 @@ export default function ContactPage() {
                     </div>
                     <button className="w-full bg-black text-white py-6 rounded-2xl font-bold text-xl hover:bg-primary hover:text-black transition-all shadow-xl shadow-black/10">
                       Send Message
+                    </button>
+                  </form>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Volunteer Form Section */}
+        <section className="py-24 bg-card-bg border-t border-black/5">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+              <ScrollReveal>
+                <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-6">Join our mission</h2>
+                <h1 className="text-6xl md:text-8xl font-black text-foreground mb-8 tracking-tighter">Give your time. <br /> <span className="text-secondary">Change a life.</span></h1>
+                <p className="text-xl md:text-2xl text-foreground/60 leading-relaxed mb-12 max-w-xl">
+                  We are actively looking for professionals who want to use their skills for good. If you are a
+                  speech therapist, occupational therapist, medical professional, or skilled in any area that
+                  could support our programmes we want to hear from you.
+                </p>
+                <div className="flex items-center gap-4 text-secondary font-bold uppercase tracking-widest text-sm">
+                  <div className="w-12 h-[2px] bg-secondary" />
+                  Your expertise matters
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={200}>
+                <div className="bg-background p-8 md:p-12 rounded-[3rem] border border-black/5 shadow-2xl">
+                  <form className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Full Name *</label>
+                        <input type="text" required placeholder="John Doe" className="w-full bg-card-bg border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-secondary transition-all font-medium" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Email Address *</label>
+                        <input type="email" required placeholder="john@example.com" className="w-full bg-card-bg border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-secondary transition-all font-medium" />
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Profession / Area of skill *</label>
+                      <input type="text" required placeholder="e.g. Speech Therapist" className="w-full bg-card-bg border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-secondary transition-all font-medium" />
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Availability</label>
+                      <input type="text" placeholder="e.g. Weekends, once a month, flexible" className="w-full bg-card-bg border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-secondary transition-all font-medium" />
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Tell us why you'd like to volunteer</label>
+                      <textarea placeholder="Your motivation..." rows="4" className="w-full bg-card-bg border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-secondary transition-all font-medium resize-none"></textarea>
+                    </div>
+
+                    <button className="w-full bg-secondary text-white py-6 rounded-2xl font-bold text-xl hover:scale-[1.02] transition-all shadow-xl shadow-secondary/20 uppercase tracking-widest">
+                      Submit Volunteer Form
                     </button>
                   </form>
                 </div>

@@ -10,7 +10,7 @@ export default function ImpactPage() {
       <Navbar />
       <main>
         {/* Cinematic Hero */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
               src="/close-up-cute-little-girl-portrait.jpg" 
@@ -28,7 +28,7 @@ export default function ImpactPage() {
               </p>
             </ScrollReveal>
           </div>
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
               <div className="w-1 h-2 bg-white rounded-full" />
             </div>
@@ -41,7 +41,7 @@ export default function ImpactPage() {
               <ScrollReveal>
                  <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">Numbers. Stories. Proof of purpose.</h2>
                  <p className="text-2xl md:text-4xl text-foreground font-medium leading-relaxed mb-12">
-                   Every number on this page is a child. A family. A moment where a life could have gone the 
+                   Every number on this page is a child. A family.<br></br> A moment where a life could have gone the 
                    other way and didn't, because someone chose to show up.
                  </p>
               </ScrollReveal>
@@ -96,7 +96,7 @@ export default function ImpactPage() {
                     </p>
                     <div className="pl-6 border-l-4 border-secondary py-2 italic text-foreground/80 text-lg">
                        "Since then, my child has been doing quite well. She takes her drugs regularly; she doesn't even look like someone that's still recovering."
-                       <p className="mt-4 font-bold text-secondary not-italic">- Mummy Jennifer</p>
+                       <p className="mt-4 font-bold text-secondary not-italic">- Jennifer's Mum</p>
                     </div>
                  </ScrollReveal>
 
@@ -110,8 +110,8 @@ export default function ImpactPage() {
                        this family experienced something different: people who kept showing up.
                     </p>
                     <div className="pl-6 border-l-4 border-primary py-2 italic text-foreground/80 text-lg">
-                       "Everyday, I am blessing these people from my heart. They are selfless. They call to check up on us — my child is feeling better."
-                       <p className="mt-4 font-bold text-primary not-italic">- Mummy David</p>
+                       "Everyday, I am blessing these people from my heart. They are selfless. They call to check up on us my child is feeling better."
+                       <p className="mt-4 font-bold text-primary not-italic">-David's Mum</p>
                     </div>
                  </ScrollReveal>
 
@@ -167,7 +167,7 @@ export default function ImpactPage() {
                           <p className="text-foreground text-xl font-bold leading-tight mb-4">
                              "Na God dey do am. For LASUTH wey Chisom been dey, God do miracle. God use them to help us."
                           </p>
-                          <p className="text-secondary font-bold">- Mummy Chisom</p>
+                          <p className="text-secondary font-bold">-Chisom's Mum</p>
                        </div>
                     </ScrollReveal>
                  </div>
