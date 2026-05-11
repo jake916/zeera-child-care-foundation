@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-white/20 text-sm">
-          <p>© 2025 Zera Childcare Foundation. All rights reserved. Built by <a href="https://khrien.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">khrien</a></p>
+          <p>© 2026 Zera Childcare Foundation. All rights reserved. Built by <a href="https://khrien.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">khrien</a></p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/" className="hover:text-white transition-colors">Terms of Service</Link>
