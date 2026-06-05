@@ -177,7 +177,6 @@ export default function AboutPage() {
            </div>
         </section>
 
-
         {/* CTA Section */}
         <ScrollReveal>
           <section className="py-24 px-6 overflow-hidden">

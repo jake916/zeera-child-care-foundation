@@ -28,7 +28,14 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
+    {
+      name: "About Us",
+      href: "/about",
+      submenu: [
+        { name: "About Us", href: "/about" },
+        { name: "Founding Members", href: "/about/founding-members" },
+      ],
+    },
     { name: "Programmes", href: "/programmes" },
     { name: "Impact", href: "/impact" },
     { name: "Contact", href: "/contact" },
@@ -57,15 +64,47 @@ const Navbar = () => {
 
         {/* Desktop Menu - Mathematically Centered */}
         <div className={`hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest transition-colors duration-300 ${scrolled ? "text-black/70" : "text-white/90"}`}>
-          {navLinks.map((link) => (
-            <Link 
-              key={link.href}
-              href={link.href} 
-              className={`transition-colors ${pathname === link.href ? "text-secondary" : scrolled ? "hover:text-secondary" : "hover:text-primary"}`}
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            if (link.submenu) {
+              const isActive = pathname.startsWith(link.href);
+              return (
+                <div key={link.name} className="relative group py-2 flex items-center gap-1 cursor-pointer">
+                  <Link 
+                    href={link.href} 
+                    className={`transition-colors ${isActive ? "text-secondary" : scrolled ? "hover:text-secondary" : "hover:text-primary"}`}
+                  >
+                    {link.name}
+                  </Link>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="opacity-60 transition-transform group-hover:rotate-180">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                  
+                  {/* Dropdown Menu */}
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-white text-black rounded-2xl shadow-xl py-3 border border-black/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top-left z-[70]">
+                    {link.submenu.map((sub) => (
+                      <Link
+                        key={sub.href}
+                        href={sub.href}
+                        className={`block px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:bg-primary/10 hover:text-primary transition-colors ${pathname === sub.href ? "text-secondary" : "text-black/75"}`}
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <Link 
+                key={link.href}
+                href={link.href} 
+                className={`transition-colors ${pathname === link.href ? "text-secondary" : scrolled ? "hover:text-secondary" : "hover:text-primary"}`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Desktop CTA */}
@@ -90,17 +129,41 @@ const Navbar = () => {
 
         {/* Mobile Menu Overlay */}
         <div className={`fixed inset-0 bg-black z-[55] transition-all duration-500 md:hidden flex flex-col px-8 pt-32 pb-12 ${isOpen ? "translate-y-0 opacity-100 visible" : "-translate-y-full opacity-0 invisible"}`}>
-          <div className="flex flex-col gap-5 text-3xl font-bold tracking-tight">
-            {navLinks.map((link) => (
-              <Link 
-                key={link.href}
-                href={link.href} 
-                onClick={() => setIsOpen(false)} 
-                className={`transition-colors ${pathname === link.href ? "text-secondary" : "text-white hover:text-secondary"}`}
-              >
-                {link.name}
-              </Link>
-            ))}
+          <div className="flex flex-col gap-6 text-3xl font-bold tracking-tight overflow-y-auto">
+            {navLinks.map((link) => {
+              if (link.submenu) {
+                return (
+                  <div key={link.name} className="flex flex-col gap-3">
+                    <div className="text-white/40 text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-1 w-full">
+                      {link.name}
+                    </div>
+                    <div className="pl-4 flex flex-col gap-4">
+                      {link.submenu.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          onClick={() => setIsOpen(false)}
+                          className={`transition-colors ${pathname === sub.href ? "text-secondary" : "text-white hover:text-secondary"}`}
+                        >
+                          {sub.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              return (
+                <Link 
+                  key={link.href}
+                  href={link.href} 
+                  onClick={() => setIsOpen(false)} 
+                  className={`transition-colors ${pathname === link.href ? "text-secondary" : "text-white hover:text-secondary"}`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
           
           <div className="mt-auto">
