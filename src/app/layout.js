@@ -1,5 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import BackToTop from "@/components/BackToTop";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         {children}
+        <BackToTop />
       </body>
     </html>
   );

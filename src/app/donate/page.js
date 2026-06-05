@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import BankDetails from "@/components/BankDetails";
 
 export default function DonatePage() {
    return (
@@ -64,45 +65,52 @@ export default function DonatePage() {
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                      <ScrollReveal delay={100} className="bg-background p-10 rounded-[3rem] border border-black/5">
-                        <h4 className="text-2xl font-bold text-foreground mb-4">100% to children</h4>
+                        <h4 className="text-2xl font-bold text-foreground mb-4">Child-focused giving</h4>
                         <p className="text-foreground/60 leading-relaxed">
-                           Every donation goes directly to covering medical costs for the children we support. We operate with lean overheads and full accountability.
+                           We are committed to ensuring that donations are used efficiently and responsibly to support children’s healthcare needs and the effective delivery of our programmes.
                         </p>
                      </ScrollReveal>
                      <ScrollReveal delay={200} className="bg-background p-10 rounded-[3rem] border border-black/5">
-                        <h4 className="text-2xl font-bold text-foreground mb-4">Immediate impact</h4>
+                        <h4 className="text-2xl font-bold text-foreground mb-4">Timely Support</h4>
                         <p className="text-foreground/60 leading-relaxed">
-                           When you donate, we deploy the funds quickly. There is no lengthy approval process, a child in need gets help as fast as possible.
+                           When you donate, we deploy support quickly. There is no lengthy approval process — children in urgent need receive help as fast as possible.
                         </p>
                      </ScrollReveal>
                      <ScrollReveal delay={300} className="bg-background p-10 rounded-[3rem] border border-black/5">
                         <h4 className="text-2xl font-bold text-foreground mb-4">Full transparency</h4>
                         <p className="text-foreground/60 leading-relaxed">
-                           We track and report every naira. Donors receive updates on how their contributions have been used.
+                           We track and report every contribution, and donors receive updates on how their support has been used.
+                           
                         </p>
                      </ScrollReveal>
                   </div>
                </div>
             </section>
 
-            {/* Donation Tiers */}
+            {/* Every Amount Makes a Difference */}
             <section className="py-24 bg-background">
-               <div className="max-w-7xl mx-auto px-6">
+               <div className="max-w-5xl mx-auto px-6">
                   <ScrollReveal className="text-center mb-16">
-                     <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-6">Every amount makes a difference</h2>
-                     <h3 className="text-4xl md:text-6xl font-black text-foreground">Our suggested amounts.</h3>
+                     <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-6">Every Amount Makes a Difference</h2>
+                     <h3 className="text-4xl md:text-6xl font-black text-foreground">How your support helps.</h3>
                   </ScrollReveal>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                      {[
-                        { amount: "₦5,000", desc: "Covers a child's essential medication for one treatment cycle." },
-                        { amount: "₦20,000", desc: "Funds a diagnostic scan or series of medical tests." },
-                        { amount: "₦50,000", desc: "Pays off an outstanding hospital bill, freeing a child to go home." },
-                        { amount: "₦100,000+", desc: "Contributes toward funding a surgical procedure." }
-                     ].map((tier, i) => (
-                        <ScrollReveal key={i} delay={i * 100} className="group bg-card-bg p-10 rounded-[2.5rem] border border-black/5 hover:border-secondary transition-all hover:shadow-2xl">
-                           <div className="text-3xl font-black text-secondary mb-4 group-hover:scale-110 transition-transform origin-left">{tier.amount}</div>
-                           <p className="text-foreground/60 leading-relaxed">{tier.desc}</p>
+                        "Helps provide essential medication for a child's treatment",
+                        "Supports diagnostic scans and critical medical tests",
+                        "Assists families with unpaid hospital bills so children can return home",
+                        "Contributes toward life-changing surgical procedures",
+                        "Supports therapy and specialist care for children with special needs",
+                        "Helps ensure vulnerable children receive timely medical care and intervention when they need it most"
+                     ].map((item, i) => (
+                        <ScrollReveal key={i} delay={i * 100} className="flex gap-6 bg-card-bg p-8 rounded-[2.5rem] border border-black/5 hover:border-primary/30 hover:shadow-2xl transition-all group">
+                           <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                                 <polyline points="20 6 9 17 4 12" />
+                              </svg>
+                           </div>
+                           <p className="text-foreground/80 font-medium text-lg leading-relaxed pt-1.5">{item}</p>
                         </ScrollReveal>
                      ))}
                   </div>
@@ -111,38 +119,17 @@ export default function DonatePage() {
 
             {/* Bank Details */}
             <section className="py-24 bg-primary text-black">
-               <div className="max-w-4xl mx-auto px-6 text-center">
+               <div className="max-w-7xl mx-auto px-6 text-center">
                   <ScrollReveal>
                      <h2 className="text-sm font-bold tracking-widest uppercase mb-6 opacity-60">Bank Details</h2>
-                     <h3 className="text-4xl md:text-7xl font-black mb-12">How to donate.</h3>
+                     <h3 className="text-4xl md:text-7xl font-black mb-6">How to donate.</h3>
+                     
+                     <BankDetails />
 
-                     <div className="bg-white/20 backdrop-blur-md border border-black/10 p-10 md:p-16 rounded-[3rem] text-left">
-                        <div className="space-y-10">
-                           <div>
-                              <div className="text-xs font-bold uppercase tracking-widest opacity-40 mb-2">Bank Name</div>
-                              <div className="text-3xl font-bold">Zenith Bank</div>
-                           </div>
-                           <div>
-                              <div className="text-xs font-bold uppercase tracking-widest opacity-40 mb-2">Account Name</div>
-                              <div className="text-3xl font-bold">Zera Childcare Foundation</div>
-                           </div>
-                           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 border-t border-black/10">
-                              <div>
-                                 <div className="text-xs font-bold uppercase tracking-widest opacity-40 mb-2">Naira Account</div>
-                                 <div className="text-3xl font-black tracking-wider">1228224578</div>
-                              </div>
-                              <div>
-                                 <div className="text-xs font-bold uppercase tracking-widest opacity-40 mb-2">USD Domiciliary</div>
-                                 <div className="text-3xl font-black tracking-wider">5073145455</div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="mt-12 space-y-6">
+                     {/* <div className="mt-16 space-y-6">
                         <p className="text-xl font-medium">Please use your name as the payment reference so we can acknowledge your gift.</p>
                         <p className="text-sm opacity-60 font-bold uppercase tracking-widest">GoFundMe link coming soon</p>
-                     </div>
+                     </div> */}
                   </ScrollReveal>
                </div>
             </section>

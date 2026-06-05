@@ -84,7 +84,7 @@ export default function AboutPage() {
                     </p>
                     <p>
                       Today, we operate with hands-on presence in government hospital paediatric units 
-                      across Lagos, carrying that original calling forward one child at a time.
+                      across Lagos, carrying that original calling forward-one child at a time.
                     </p>
                   </div>
                 </ScrollReveal>
@@ -139,25 +139,21 @@ export default function AboutPage() {
               <ScrollReveal delay={100} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group ">
                 <h4 className="text-2xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Transparency</h4>
                 <p className="text-foreground/60 leading-relaxed group-hover:text-black/80 transition-colors">
-                  We are open about where every naira goes. Donors, partners, and families can trust 
-                  that our resources go directly to the children who need them.
+                  We are open about where every donation goes. Donors, partners, and families can trust that our resources go directly to the children who need them. 
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={200} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group ">
                 <h4 className="text-2xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Service with Honour</h4>
                 <p className="text-foreground/60 leading-relaxed group-hover:text-black/80 transition-colors">
-                  We serve not out of obligation but out of deep conviction. Every child we support 
-                  is treated with dignity not as a recipient of pity, but as a life worthy of the 
-                  best care available.
+                  We serve with integrity, compassion, and excellence, ensuring that every child is supported with dignity and respect. We are committed to connecting vulnerable children to the medical care they need, advocating for their wellbeing, and standing by families throughout their healthcare journey.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={300} className="bg-background p-10 rounded-[2.5rem] border border-black/5 hover:bg-primary hover:shadow-2xl transition-all group duration-500">
                 <h4 className="text-2xl font-bold text-foreground mb-4 group-hover:text-black transition-colors">Faith in God</h4>
                 <p className="text-foreground/60 leading-relaxed group-hover:text-black/80 transition-colors">
-                  Our foundation is rooted in the belief that every human life is sacred and worth 
-                  fighting for. This faith drives our commitment and sustains our work.
+                  We are guided by our faith in God, trusting in His power to bring healing and restoration to every child we support. This faith fuels our compassion, strengthens our resilience, and inspires our commitment to ensuring that every child can access the care and support they need to live and thrive
                 </p>
               </ScrollReveal>
             </div>
@@ -171,13 +167,11 @@ export default function AboutPage() {
                  <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">Who We Serve</h2>
                  <h3 className="text-3xl md:text-5xl font-extrabold text-foreground mb-10">Children who need us most.</h3>
                  <p className="text-foreground/60 text-lg md:text-xl leading-relaxed mb-8">
-                   We focus our support on children aged 0–17 from low-income families who are currently 
-                   receiving treatment in government-owned hospitals in Lagos State.
+                   We support children aged 0–17 from low-income families who require access to medical care, therapeutic interventions, and other essential support services. 
                  </p>
                  <p className="text-foreground/60 text-lg md:text-xl leading-relaxed">
-                   We prioritise children who require medical interventions that are treatable or manageable
-                   surgeries, medications, diagnostic tests, and scans and families who have been unable 
-                   to pay outstanding hospital bills even after discharge.
+                   Our work includes assisting children receiving treatment in government-owned general hospitals across Lagos State, as well as children with special needs who require timely intervention and ongoing care.
+ We prioritise cases where treatment, therapy, medication, or other interventions can significantly improve a child’s health, development, and quality of life.
                  </p>
               </ScrollReveal>
            </div>

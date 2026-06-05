@@ -24,7 +24,7 @@ export default function ImpactPage() {
             <ScrollReveal>
               <h1 className="text-6xl md:text-9xl font-black text-white mb-8 tracking-tighter">Impact</h1>
               <p className="text-white/80 text-xl md:text-3xl max-w-3xl mx-auto leading-tight font-medium">
-                68 children. 68 reasons we do this.
+              68 children and many  more to reach, 68 reasons we do this. 
               </p>
             </ScrollReveal>
           </div>
@@ -159,9 +159,7 @@ export default function ImpactPage() {
                        <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-6 block">Story 04</span>
                        <h3 className="text-4xl md:text-5xl font-extrabold text-foreground mb-8">Chisom is okay now.</h3>
                        <p className="text-foreground/60 text-lg leading-relaxed mb-10">
-                          Chisom was a patient at LASUTH when Zera Foundation came through. Her mother watched 
-                          as the Foundation worked what she calls a miracle. Chisom no longer complains of pain 
-                          and is doing exceptionally well.
+                          Chisom 13-year-old girl who suffered frequent seizures due to irregular access to medication, a condition that significantly disrupted her schooling and daily life. With consistent support from Zera, she is now seizure-free and has returned to school, continuing her education with renewed stability and hope.
                        </p>
                        <div className="bg-secondary/5 border-l-4 border-secondary p-8 rounded-r-2xl">
                           <p className="text-foreground text-xl font-bold leading-tight mb-4">

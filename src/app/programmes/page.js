@@ -130,8 +130,7 @@ export default function ProgrammesPage() {
                       this gap, connecting children with therapy and specialist support.
                     </p>
                     <p>
-                      We focus particularly on timely interventions because for many conditions, early support 
-                      makes the difference between a child who develops fully and one who is left behind.
+                     We focus particularly on timely interventions because for many conditions, early support can be the difference between a child reaching their full potential and one whose challenges become more severe over time.
                     </p>
                   </div>
                 </ScrollReveal>
@@ -155,16 +154,11 @@ export default function ProgrammesPage() {
           <div className="max-w-4xl mx-auto px-6 text-center">
             <ScrollReveal>
               <h2 className="text-sm font-bold tracking-widest uppercase mb-6 opacity-60">Eligibility</h2>
-              <h3 className="text-4xl md:text-6xl font-black mb-8">Does your child qualify for support?</h3>
+              <h3 className="text-4xl md:text-6xl font-black mb-8">Does your child qualify for  medicalsupport?</h3>
               <p className="text-xl md:text-2xl font-medium leading-relaxed mb-12">
-                We support children aged 0–17 years who are currently receiving treatment in 
-                government-owned hospitals in Lagos State, from families with limited financial means.
+                We support children aged 0–17 years from low-income families who are receiving treatment in government-owned general hospitals across Lagos State. Through referrals from medical representatives within paediatric units, we assist children who require surgery, medication, diagnostic tests, or support with outstanding hospital bills delaying treatment or discharge
               </p>
-              <div className="bg-white/20 backdrop-blur-md border border-black/10 p-10 rounded-[2.5rem] mb-12">
-                <p className="text-lg leading-relaxed">
-                  If your child requires a surgery, medication, diagnostic test, or has an unpaid hospital bill preventing their discharge we want to hear from you.
-                </p>
-              </div>
+              
               <Link href="/contact" className="inline-flex items-center gap-4 bg-secondary text-white px-12 py-6 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-secondary/20">
                 Contact Us to Apply 
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

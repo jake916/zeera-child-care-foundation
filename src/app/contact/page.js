@@ -53,7 +53,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-1">Email Us</div>
-                      <a href="mailto:info@zerachildcarefoundation.org" className="text-[15px] font-bold text-foreground hover:text-primary transition-colors">info@zerachildcarefoundation.org</a>
+                      <a href="mailto:info@zerachildcarefoundation.org" className="text-[15px] font-bold text-foreground hover:text-primary transition-colors">zerachildcare@gmail.com</a>
                     </div>
                   </div>
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-1">Call Us</div>
-                      <a href="tel:+2348131839553" className="text-xl font-bold text-foreground hover:text-secondary transition-colors">+234 813 183 9553</a>
+                      <a href="tel:+2348131839553" className="text-xl font-bold text-foreground hover:text-secondary transition-colors">+234 803 366 9954</a>
                     </div>
                   </div>
 
@@ -123,9 +123,7 @@ export default function ContactPage() {
                 <h2 className="text-sm font-bold tracking-widest text-secondary uppercase mb-6">Join our mission</h2>
                 <h1 className="text-6xl md:text-8xl font-black text-foreground mb-8 tracking-tighter">Give your time. <br /> <span className="text-secondary">Change a life.</span></h1>
                 <p className="text-xl md:text-2xl text-foreground/60 leading-relaxed mb-12 max-w-xl">
-                  We are actively looking for professionals who want to use their skills for good. If you are a
-                  speech therapist, occupational therapist, medical professional, or skilled in any area that
-                  could support our programmes we want to hear from you.
+                  We are looking for professionals who want to use their skills to make a meaningful impact. If you have expertise that could support our programmes, we would love to hear from you.
                 </p>
                 <div className="flex items-center gap-4 text-secondary font-bold uppercase tracking-widest text-sm">
                   <div className="w-12 h-[2px] bg-secondary" />

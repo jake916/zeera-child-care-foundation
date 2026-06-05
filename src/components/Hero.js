@@ -45,7 +45,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-base text-white/80 max-w-sm mb-10 leading-relaxed font-medium">
-            We stand in the gap for vulnerable children who cannot access the medical care they need one child at a time.
+            We stand in the gap for vulnerable children who cannot access medical care, therapy, and essential interventions that improve health, development, and quality of life. Serving one hospital and one child at a time.
           </p>
 
           <div className="flex flex-col gap-4 w-full">
@@ -77,13 +77,13 @@ const Hero = () => {
       {/* DESKTOP VIEW - (Independent for Fine-tuning) */}
       <div className="hidden md:flex flex-1 flex-col items-center justify-center relative z-20 px-12 text-center animate-slide-up">
         <div className="max-w-6xl w-full flex flex-col items-center">
-          <h1 className="text-8xl lg:text-[5rem] font-black tracking-tighter text-white mb-8 leading-[0.85] mt-32">
+          <h1 className="text-6xl lg:text-[5rem] font-black tracking-tighter text-white mb-8 leading-[1.05] mt-23">
             Every child deserves <br />
             <span className="text-primary">a chance to live.</span>
           </h1>
 
-          <p className="text-xl lg:text-2xl text-white/70 max-w-3xl mb-14 leading-relaxed font-medium tracking-tight">
-            We stand in the gap for vulnerable children who cannot access the medical care they need paying bills, funding surgeries, and saving lives in Lagos, one child at a time.
+          <p className="text-xl lg:text-xl text-white/70 max-w-3xl mb-14 leading-relaxed font-medium tracking-tight">
+            We stand in the gap for vulnerable children who cannot access medical care, therapy, and essential interventions that improve health, development, and quality of life. Serving one hospital and one child at a time.
           </p>
 
           <div className="flex items-center justify-center gap-8">

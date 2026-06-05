@@ -7,15 +7,15 @@ const causes = [
     id: 1,
     title: "Hospital Outreach Programme",
     tagline: "At the bedside. When it matters most.",
-    description: "We visit the paediatric unit at LASUTH and other government hospitals, identifying children from low-income families who need urgent medical support. We pay bills, fund surgeries, and provide medications so treatment is never delayed.",
+    description: "We currently carry out medical outreach in the paediatric unit of Lagos State University Teaching Hospital, with plans to expand gradually to general hospitals across Lagos- one hospital at a time-until we are able to reach children in need throughout the state.  ",
     image: "/closeup-shot-boy-doctor-wearing-sanitary-masks.jpg",
   },
   {
     id: 2,
     title: "Special Needs Intervention",
     tagline: "Every child deserves to thrive not just survive.",
-    description: "We support children with special needs from underserved communities particularly those who need timely intervention to improve their quality of life. Speech therapy, occupational therapy, and specialist care, made accessible.",
-    image: "/african-kid-marketplace.jpg",
+    description: "We support children with special needs from underserved communities particularly those who need timely intervention to improve their quality of life. We make essential support services accessible to the children who need them most",
+    image: "/portrait-young-people-with-freckles-beauty-marks.jpg",
   },
 ];
 
