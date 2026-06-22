@@ -63,7 +63,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-1">Call Us</div>
-                      <a href="tel:+2348131839553" className="text-xl font-bold text-foreground hover:text-secondary transition-colors">+234 803 366 9954</a>
+                      <a href="tel:+234 906 923 7247" className="text-xl font-bold text-foreground hover:text-secondary transition-colors">+234 906 923 7247</a>
                     </div>
                   </div>
 
@@ -80,35 +80,19 @@ export default function ContactPage() {
               </ScrollReveal>
 
               <ScrollReveal delay={200}>
-                <div className="bg-card-bg p-8 md:p-12 rounded-[3rem] border border-black/5 shadow-2xl">
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Full Name</label>
-                        <input type="text" placeholder="John Doe" className="w-full bg-background border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-primary transition-all font-medium" />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Email Address</label>
-                        <input type="email" placeholder="john@example.com" className="w-full bg-background border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-primary transition-all font-medium" />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Subject</label>
-                      <select className="w-full bg-background border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-primary transition-all font-medium appearance-none">
-                        <option>General Inquiry</option>
-                        <option>Seek Support</option>
-                        <option>Partnership</option>
-                        <option>Volunteering</option>
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold uppercase tracking-widest text-foreground/40 ml-4">Message</label>
-                      <textarea placeholder="How can we help you?" rows="5" className="w-full bg-background border border-black/5 rounded-2xl px-6 py-4 outline-none focus:border-primary transition-all font-medium resize-none"></textarea>
-                    </div>
-                    <button className="w-full bg-black text-white py-6 rounded-2xl font-bold text-xl hover:bg-primary hover:text-black transition-all shadow-xl shadow-black/10">
-                      Send Message
-                    </button>
-                  </form>
+                <div className="bg-card-bg p-4 md:p-8 rounded-[3rem] border border-black/5 shadow-2xl overflow-hidden">
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScmZ8xjB0SD7hlWvVc4uhWFV1vC0zVuLigjo-imXsesqLnTEg/viewform?embedded=true"
+                    width="100%"
+                    height="828"
+                    frameBorder="0"
+                    marginHeight="0"
+                    marginWidth="0"
+                    title="Contact Us Form"
+                    style={{ borderRadius: "1.5rem", display: "block" }}
+                  >
+                    Loading…
+                  </iframe>
                 </div>
               </ScrollReveal>
             </div>

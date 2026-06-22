@@ -102,7 +102,7 @@ export default function Home() {
                       The child's mum was so distressed. But because of this foundation last time I called, she said the child is walking fine now.
                     </p>
                     <p className="text-white/80 text-xl font-medium">
-                      - Nurse Chukwura, <span className="text-primary/80">LASUTH Paediatric Unit</span>
+                      - Nurse C, <span className="text-primary/80">LASUTH Paediatric Unit</span>
                     </p>
                   </div>
                 </div>
@@ -122,8 +122,7 @@ export default function Home() {
                         <span className="text-white">a difference?</span>
                       </h2>
                       <p className="text-black/70 text-lg md:text-xl mb-8 font-medium max-w-lg mx-auto md:mx-0">
-                        Your support can provide a child with medical care, clean water, 
-                        and a hope for the future. Start today.
+                        Your support can provide a child with medical care, and a hope for the future. Start today.
                       </p>
                       <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
                          <Link href="/donate" className="w-full sm:w-auto">

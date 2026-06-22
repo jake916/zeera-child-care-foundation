@@ -28,14 +28,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    {
-      name: "About Us",
-      href: "/about",
-      submenu: [
-        { name: "About Us", href: "/about" },
-        { name: "Founding Members", href: "/about/founding-members" },
-      ],
-    },
+    { name: "About Us", href: "/about" },
     { name: "Programmes", href: "/programmes" },
     { name: "Impact", href: "/impact" },
     { name: "Contact", href: "/contact" },

@@ -24,7 +24,8 @@ export default function ImpactPage() {
             <ScrollReveal>
               <h1 className="text-6xl md:text-9xl font-black text-white mb-8 tracking-tighter">Impact</h1>
               <p className="text-white/80 text-xl md:text-3xl max-w-3xl mx-auto leading-tight font-medium">
-              68 children and many  more to reach, 68 reasons we do this. 
+              68 children reached and many more to reach.
+68 reasons we do this and many more reasons to keep going.
               </p>
             </ScrollReveal>
           </div>
@@ -74,7 +75,7 @@ export default function ImpactPage() {
                        <p className="text-white text-lg italic mb-6">
                           "The child's mum was so distressed. But because of this foundation last time I called, she said the child is walking fine now."
                        </p>
-                       <p className="text-primary font-bold">- Nurse Chukwura, <span className="opacity-60 text-white font-medium">LASUTH Paediatric Unit</span></p>
+                       <p className="text-primary font-bold">- Nurse C, <span className="opacity-60 text-white font-medium">LASUTH Paediatric Unit</span></p>
                     </div>
                  </ScrollReveal>
               </div>
@@ -91,12 +92,12 @@ export default function ImpactPage() {
                     <span className="text-xs font-bold uppercase tracking-widest text-primary mb-6 block">Story 02</span>
                     <h4 className="text-3xl font-bold text-foreground mb-6">Four years of faithfulness.</h4>
                     <p className="text-foreground/60 text-lg leading-relaxed mb-8">
-                       Jennifer's mother remembers exactly when Zera Childcare Foundation first came to the hospital in 2021. 
+                       Mummy J remembers exactly when Zera Childcare Foundation first came to the hospital in 2021. 
                        There were moments when money for treatment simply wasn't there, and each time, the Foundation stepped in.
                     </p>
                     <div className="pl-6 border-l-4 border-secondary py-2 italic text-foreground/80 text-lg">
                        "Since then, my child has been doing quite well. She takes her drugs regularly; she doesn't even look like someone that's still recovering."
-                       <p className="mt-4 font-bold text-secondary not-italic">- Jennifer's Mum</p>
+                       <p className="mt-4 font-bold text-secondary not-italic">- Mummy J</p>
                     </div>
                  </ScrollReveal>
 
@@ -105,13 +106,13 @@ export default function ImpactPage() {
                     <span className="text-xs font-bold uppercase tracking-widest text-primary mb-6 block">Story 03</span>
                     <h4 className="text-3xl font-bold text-foreground mb-6">More than medicine.</h4>
                     <p className="text-foreground/60 text-lg leading-relaxed mb-8">
-                       For David's mother, what stands out is not just the medication we bought for her son, it is 
+                       For Mummy D, what stands out is not just the medication we bought for her son, it is 
                        that we called to check up on him afterwards. In a world where charity often ends at the transaction, 
                        this family experienced something different: people who kept showing up.
                     </p>
                     <div className="pl-6 border-l-4 border-primary py-2 italic text-foreground/80 text-lg">
                        "Everyday, I am blessing these people from my heart. They are selfless. They call to check up on us my child is feeling better."
-                       <p className="mt-4 font-bold text-primary not-italic">-David's Mum</p>
+                       <p className="mt-4 font-bold text-primary not-italic">- Mummy D</p>
                     </div>
                  </ScrollReveal>
 
@@ -126,15 +127,15 @@ export default function ImpactPage() {
                  <span className="text-primary font-bold uppercase tracking-widest text-sm mb-8 block">Sensitive Story</span>
                  <h3 className="text-4xl md:text-6xl font-black text-white mb-10 leading-tight">Baby Praise a family held through the hardest season.</h3>
                  <p className="text-white/60 text-xl leading-relaxed mb-12">
-                    In 2021, Janet's daughter Praise was admitted for six months. Zera Foundation funded every test 
-                    and every medication. Despite everything, Praise passed away. But the Foundation's presence meant 
+                    In 2021, Miss J's daughter Baby P was admitted for six months. Zera Foundation funded every test 
+                    and every medication. Despite everything, Baby P passed away. But the Foundation's presence meant 
                     the family was never alone. In Janet's own words, they were held.
                  </p>
                  <div className="max-w-2xl mx-auto border-t border-white/10 pt-12">
                     <p className="text-white text-2xl font-medium italic mb-8">
                        "They are the ones God used to give us the money... in all things, we give thanks to God. I say a big thank you to the foundation."
                     </p>
-                    <p className="text-primary font-bold">- Mrs Falolu (Janet), <span className="opacity-60 text-white font-medium">Mother of Baby Praise</span></p>
+                    <p className="text-primary font-bold">- Mrs J<span className="opacity-60 text-white font-medium">Mother of Baby P</span></p>
                  </div>
               </ScrollReveal>
            </div>
@@ -165,7 +166,7 @@ export default function ImpactPage() {
                           <p className="text-foreground text-xl font-bold leading-tight mb-4">
                              "Na God dey do am. For LASUTH wey Chisom been dey, God do miracle. God use them to help us."
                           </p>
-                          <p className="text-secondary font-bold">-Chisom's Mum</p>
+                          <p className="text-secondary font-bold">-Mummy C</p>
                        </div>
                     </ScrollReveal>
                  </div>

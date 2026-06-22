@@ -57,7 +57,7 @@ export default function AboutPage() {
               <ScrollReveal>
                 <div className="relative aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
                    <Image 
-                     src="/cute-black-baby-home-with-parents.jpg" 
+                     src="/hands-holding-each-other-support.jpg" 
                      alt="A child with parents at home" 
                      fill
                      className="object-cover"
@@ -120,14 +120,63 @@ export default function AboutPage() {
               <ScrollReveal delay={100} className="bg-secondary p-12 rounded-[3rem] text-white">
                  <h4 className="text-sm font-bold uppercase tracking-widest mb-6 opacity-60">Our Vision</h4>
                  <p className="text-2xl md:text-3xl font-bold leading-tight">
-                   A world where every child has a chance to live where illness is met with care, 
-                   not helplessness, and where no family faces a medical crisis alone.
+                   A world where every child has a chance to live.
                  </p>
               </ScrollReveal>
            </div>
         </section>
 
+
+        {/* A Word from Our Founder */}
+        <section className="py-24 bg-card-bg">
+          <div className="max-w-4xl mx-auto px-6">
+            <ScrollReveal>
+              <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6 text-center">A Word from Our Founder</h2>
+              <h3 className="text-4xl md:text-5xl font-black text-foreground mb-16 tracking-tighter text-center">A Message from <br /><span className="text-primary">the Founder</span></h3>
+
+              <div className="relative bg-background rounded-[3rem] p-10 md:p-16 border border-black/5 shadow-2xl">
+                {/* Decorative quote mark */}
+                <div className="absolute top-8 left-10 text-primary/10 font-black" style={{fontSize: "8rem", lineHeight: 1}}>&ldquo;</div>
+
+                <div className="relative z-10 space-y-6 text-foreground/70 text-lg leading-relaxed">
+                  <p>
+                    In 2019, what would eventually become Zera Childcare Foundation began with a simple but deeply personal conviction: no child should be denied access to life-saving medical care because of financial hardship.
+                  </p>
+                  <p>
+                    Over the years, I encountered families struggling to raise funds for surgeries, medications, investigations, and ongoing treatment for their children. While many wanted desperately to help their children, the financial burden was often overwhelming. These experiences inspired me to take action.
+                  </p>
+                  <p>
+                    What started with a seed contribution of ₦50,000 and the support of nine individuals has grown into a registered foundation committed to supporting vulnerable children with critical healthcare needs. Since then, we have had the privilege of standing alongside families during some of their most challenging moments, providing financial assistance, hope, and encouragement when they needed it most.
+                  </p>
+                  <p>
+                    At Zera, we believe that every child deserves the opportunity to live, grow, dream, and reach their full potential, regardless of their family's circumstances. We are guided by compassion, accountability, integrity, and a commitment to ensuring that resources entrusted to us create meaningful impact in the lives of children and their families.
+                  </p>
+                  <p>
+                    Our achievements would not have been possible without the generosity of donors, partners, volunteers, healthcare professionals, and supporters who share our vision. Every child we support is a reminder that collective compassion can transform lives.
+                  </p>
+                  <p>
+                    As we look to the future, our commitment remains unwavering. We will continue to advocate for vulnerable children, expand our reach, strengthen partnerships, and work tirelessly to ensure that more children receive the care they need and deserve.
+                  </p>
+                  <p>
+                    Thank you for being part of this journey and for helping us bring hope, healing, and brighter futures to children and families across our communities.
+                  </p>
+                </div>
+
+                {/* Signature */}
+                <div className="relative z-10 mt-12 pt-8 border-t border-black/5 flex items-center gap-6">
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center font-black text-xl text-black shrink-0">BO</div>
+                  <div>
+                    <div className="text-xl font-black text-foreground">Bunmi Obabemi</div>
+                    <div className="text-sm font-bold text-foreground/40 uppercase tracking-widest mt-1">Founder & CEO, Zera Childcare Foundation</div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* Core Values Section */}
+
         <section className="py-24 bg-card-bg">
           <div className="max-w-7xl mx-auto px-6">
             <ScrollReveal className="text-center mb-20">

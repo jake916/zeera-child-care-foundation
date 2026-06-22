@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-black pt-24 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <Image 
@@ -46,8 +46,30 @@ const Footer = () => {
             <h5 className="text-white font-bold mb-6 uppercase tracking-widest text-sm">Contact</h5>
             <ul className="space-y-4 text-white/50">
               <li><a href="mailto:zerachildcare@gmail.com" className="hover:text-white transition-colors">zerachildcare@gmail.com</a></li>
-              <li><a href="tel:+234 803 366 9954" className="hover:text-white transition-colors">+234 803 366 9954</a></li>
+              <li><a href="tel:+234 906 923 7247" className="hover:text-white transition-colors">+234 906 923 7247</a></li>
               <li>Lagos, Nigeria</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold mb-6 uppercase tracking-widest text-sm">Financials</h5>
+            <ul className="space-y-4 text-white/50">
+              <li>
+                <a
+                  href="/ZERA CHILDCARE 2025 AFS SIGNED (2).pdf"
+                  download="Zera-Childcare-2025-Financial-Statement.pdf"
+                  className="hover:text-primary transition-colors flex items-center gap-2 group"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 group-hover:text-primary transition-colors"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  2025 Annual Financial Statement
+                </a>
+              </li>
+              <li>
+                <Link href="/funds-raised" className="hover:text-primary transition-colors flex items-center gap-2 group">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 group-hover:text-primary transition-colors"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  Funds Raised
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

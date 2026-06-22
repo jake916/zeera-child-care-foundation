@@ -158,13 +158,6 @@ export default function ProgrammesPage() {
               <p className="text-xl md:text-2xl font-medium leading-relaxed mb-12">
                 We support children aged 0–17 years from low-income families who are receiving treatment in government-owned general hospitals across Lagos State. Through referrals from medical representatives within paediatric units, we assist children who require surgery, medication, diagnostic tests, or support with outstanding hospital bills delaying treatment or discharge
               </p>
-              
-              <Link href="/contact" className="inline-flex items-center gap-4 bg-secondary text-white px-12 py-6 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-secondary/20">
-                Contact Us to Apply 
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </Link>
             </ScrollReveal>
           </div>
         </section>
