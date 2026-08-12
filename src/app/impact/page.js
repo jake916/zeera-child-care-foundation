@@ -135,7 +135,7 @@ export default function ImpactPage() {
                     <p className="text-white text-2xl font-medium italic mb-8">
                        "They are the ones God used to give us the money... in all things, we give thanks to God. I say a big thank you to the foundation."
                     </p>
-                    <p className="text-primary font-bold">- Mrs J<span className="opacity-60 text-white font-medium">Mother of Baby P</span></p>
+                    <p className="text-primary font-bold">- Mrs J <span className="opacity-60 text-white font-medium">Mother of Baby P</span></p>
                  </div>
               </ScrollReveal>
            </div>

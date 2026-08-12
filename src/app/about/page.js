@@ -166,7 +166,7 @@ export default function AboutPage() {
                 <div className="relative z-10 mt-12 pt-8 border-t border-black/5 flex items-center gap-6">
                   <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center font-black text-xl text-black shrink-0">BO</div>
                   <div>
-                    <div className="text-xl font-black text-foreground">Bunmi Obabemi</div>
+                    <div className="text-xl font-black text-foreground">Bunmi Obagbemi</div>
                     <div className="text-sm font-bold text-foreground/40 uppercase tracking-widest mt-1">Founder & CEO, Zera Childcare Foundation</div>
                   </div>
                 </div>
