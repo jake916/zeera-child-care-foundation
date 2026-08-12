@@ -53,7 +53,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-widest text-foreground/40 mb-1">Email Us</div>
-                      <a href="mailto:info@zerachildcarefoundation.org" className="text-[15px] font-bold text-foreground hover:text-primary transition-colors">zerachildcare@gmail.com</a>
+                      <a href="mailto:zerachildcare@gmail.com" className="text-[15px] font-bold text-foreground hover:text-primary transition-colors">zerachildcare@gmail.com</a>
                     </div>
                   </div>
 
