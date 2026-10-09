@@ -83,8 +83,7 @@ export default function AboutPage() {
                       at life is never reduced to a matter of finances.
                     </p>
                     <p>
-                      Today, we operate with hands-on presence in government hospital paediatric units 
-                      across Lagos, carrying that original calling forward-one child at a time.
+                      Today, we operate with hands-on presence in government hospital paediatric unit, carrying that original calling forward-one child at a time.
                     </p>
                   </div>
                 </ScrollReveal>
@@ -128,50 +127,111 @@ export default function AboutPage() {
 
 
         {/* A Word from Our Founder */}
-        <section className="py-24 bg-card-bg">
-          <div className="max-w-4xl mx-auto px-6">
-            <ScrollReveal>
-              <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6 text-center">A Word from Our Founder</h2>
-              <h3 className="text-4xl md:text-5xl font-black text-foreground mb-16 tracking-tighter text-center">A Message from <br /><span className="text-primary">the Founder</span></h3>
-
-              <div className="relative bg-background rounded-[3rem] p-10 md:p-16 border border-black/5 shadow-2xl">
-                {/* Decorative quote mark */}
-                <div className="absolute top-8 left-10 text-primary/10 font-black" style={{fontSize: "8rem", lineHeight: 1}}>&ldquo;</div>
-
-                <div className="relative z-10 space-y-6 text-foreground/70 text-lg leading-relaxed">
-                  <p>
-                    In 2019, what would eventually become Zera Childcare Foundation began with a simple but deeply personal conviction: no child should be denied access to life-saving medical care because of financial hardship.
-                  </p>
-                  <p>
-                    Over the years, I encountered families struggling to raise funds for surgeries, medications, investigations, and ongoing treatment for their children. While many wanted desperately to help their children, the financial burden was often overwhelming. These experiences inspired me to take action.
-                  </p>
-                  <p>
-                    What started with a seed contribution of ₦50,000 and the support of nine individuals has grown into a registered foundation committed to supporting vulnerable children with critical healthcare needs. Since then, we have had the privilege of standing alongside families during some of their most challenging moments, providing financial assistance, hope, and encouragement when they needed it most.
-                  </p>
-                  <p>
-                    At Zera, we believe that every child deserves the opportunity to live, grow, dream, and reach their full potential, regardless of their family's circumstances. We are guided by compassion, accountability, integrity, and a commitment to ensuring that resources entrusted to us create meaningful impact in the lives of children and their families.
-                  </p>
-                  <p>
-                    Our achievements would not have been possible without the generosity of donors, partners, volunteers, healthcare professionals, and supporters who share our vision. Every child we support is a reminder that collective compassion can transform lives.
-                  </p>
-                  <p>
-                    As we look to the future, our commitment remains unwavering. We will continue to advocate for vulnerable children, expand our reach, strengthen partnerships, and work tirelessly to ensure that more children receive the care they need and deserve.
-                  </p>
-                  <p>
-                    Thank you for being part of this journey and for helping us bring hope, healing, and brighter futures to children and families across our communities.
-                  </p>
-                </div>
-
-                {/* Signature */}
-                <div className="relative z-10 mt-12 pt-8 border-t border-black/5 flex items-center gap-6">
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center font-black text-xl text-black shrink-0">BO</div>
-                  <div>
-                    <div className="text-xl font-black text-foreground">Bunmi Obagbemi</div>
-                    <div className="text-sm font-bold text-foreground/40 uppercase tracking-widest mt-1">Founder & CEO, Zera Childcare Foundation</div>
-                  </div>
-                </div>
-              </div>
+        {/* A Word from Our Founder */}
+        <section className="py-24 bg-card-bg overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6">
+            <ScrollReveal className="mb-12">
+              <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">A Word from Our Founder</h2>
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-foreground tracking-tighter">
+                A Message from <span className="text-primary">the Founder</span>
+              </h3>
             </ScrollReveal>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+              {/* Text on the Left */}
+              <div className="lg:col-span-7">
+                <ScrollReveal>
+                  <div className="relative bg-background rounded-[3rem] p-8 md:p-14 border border-black/5 shadow-2xl">
+                    {/* Decorative quote mark */}
+                    <div className="absolute top-6 left-8 text-primary/10 font-black pointer-events-none select-none" style={{fontSize: "7rem", lineHeight: 1}}>&ldquo;</div>
+
+                    <div className="relative z-10 space-y-6 text-foreground/75 text-lg leading-relaxed">
+                      <p>
+                        In 2019, what would eventually become Zera Childcare Foundation began with a simple but deeply personal conviction: no child should be denied access to life-saving medical care because of financial hardship.
+                      </p>
+                      <p>
+                        Over the years, I encountered families struggling to raise funds for surgeries, medications, investigations, and ongoing treatment for their children. While many wanted desperately to help their children, the financial burden was often overwhelming. These experiences inspired me to take action.
+                      </p>
+                      <p>
+                        What started with a seed contribution of ₦50,000 and the support of nine individuals has grown into a registered foundation committed to supporting vulnerable children with critical healthcare needs. Since then, we have had the privilege of standing alongside families during some of their most challenging moments, providing financial assistance, hope, and encouragement when they needed it most.
+                      </p>
+                      <p>
+                        At Zera, we believe that every child deserves the opportunity to live, grow, dream, and reach their full potential, regardless of their family's circumstances. We are guided by compassion, accountability, integrity, and a commitment to ensuring that resources entrusted to us create meaningful impact in the lives of children and their families.
+                      </p>
+                      <p>
+                        Our achievements would not have been possible without the generosity of donors, partners, volunteers, healthcare professionals, and supporters who share our vision. Every child we support is a reminder that collective compassion can transform lives.
+                      </p>
+                      <p>
+                        As we look to the future, our commitment remains unwavering. We will continue to advocate for vulnerable children, expand our reach, strengthen partnerships, and work tirelessly to ensure that more children receive the care they need and deserve.
+                      </p>
+                      <p>
+                        Thank you for being part of this journey and for helping us bring hope, healing, and brighter futures to children and families across our communities.
+                      </p>
+                    </div>
+
+                    {/* Signature */}
+                    <div className="relative z-10 mt-10 pt-8 border-t border-black/5 flex items-center gap-5">
+                      <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-primary shrink-0">
+                        <Image 
+                          src="/founder_bunmi.jpeg" 
+                          alt="Bunmi Obagbemi" 
+                          fill 
+                          className="object-cover" 
+                        />
+                      </div>
+                      <div>
+                        <div className="text-xl font-black text-foreground">Bunmi Obagbemi</div>
+                        <div className="text-sm font-bold text-foreground/50 uppercase tracking-widest mt-0.5">Founder & CEO, Zera Childcare Foundation</div>
+                      </div>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              </div>
+
+              {/* Image on the Right */}
+              <div className="lg:col-span-5 lg:sticky lg:top-28">
+                <ScrollReveal delay={150}>
+                  <div className="relative group">
+                    {/* Decorative background glow */}
+                    <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 via-primary/5 to-secondary/15 rounded-[3.5rem] blur-xl opacity-70 group-hover:opacity-100 transition duration-700 pointer-events-none" />
+
+                    <div className="relative bg-background rounded-[3rem] p-4 sm:p-5 border border-black/5 shadow-2xl overflow-hidden">
+                      <div className="relative aspect-[4/5] w-full rounded-[2.3rem] overflow-hidden bg-black/5">
+                        <Image 
+                          src="/founder_bunmi.jpeg" 
+                          alt="Bunmi Obagbemi - Founder & CEO" 
+                          fill
+                          priority
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 40vw"
+                          className="object-cover object-top transition duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+                        
+                        {/* Overlay caption */}
+                        <div className="absolute bottom-6 left-6 right-6 text-white">
+                          <span className="inline-block px-3 py-1 bg-primary text-black font-extrabold text-xs uppercase tracking-wider rounded-full mb-3 shadow-md">
+                            Founder & CEO
+                          </span>
+                          <h4 className="text-2xl font-black leading-tight drop-shadow-md">
+                            Bunmi Obagbemi
+                          </h4>
+                          <p className="text-white/80 text-sm mt-1 drop-shadow font-medium">
+                            Zera Childcare Foundation
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Highlight quote under the photo */}
+                      <div className="p-5 text-center">
+                        <p className="text-foreground/80 italic font-medium text-sm leading-relaxed">
+                          &ldquo;Every child we support is a reminder that collective compassion can transform lives.&rdquo;
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              </div>
+            </div>
           </div>
         </section>
 

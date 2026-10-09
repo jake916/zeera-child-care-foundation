@@ -75,7 +75,7 @@ export default function ImpactPage() {
                        <p className="text-white text-lg italic mb-6">
                           "The child's mum was so distressed. But because of this foundation last time I called, she said the child is walking fine now."
                        </p>
-                       <p className="text-primary font-bold">- Nurse C, <span className="opacity-60 text-white font-medium">LASUTH Paediatric Unit</span></p>
+                       <p className="text-primary font-bold">-Matron C, <span className="opacity-60 text-white font-medium">A teaching hospital in Ikeja Paediatric Unit</span></p>
                     </div>
                  </ScrollReveal>
               </div>
@@ -164,7 +164,7 @@ export default function ImpactPage() {
                        </p>
                        <div className="bg-secondary/5 border-l-4 border-secondary p-8 rounded-r-2xl">
                           <p className="text-foreground text-xl font-bold leading-tight mb-4">
-                             "Na God dey do am. For LASUTH wey Chisom been dey, God do miracle. God use them to help us."
+                             "Na God dey do am. For A teaching hospital in Ikeja wey Chisom been dey, God do miracle. God use them to help us."
                           </p>
                           <p className="text-secondary font-bold">-Mummy C</p>
                        </div>

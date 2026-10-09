@@ -7,7 +7,7 @@ const causes = [
     id: 1,
     title: "Hospital Outreach Programme",
     tagline: "At the bedside. When it matters most.",
-    description: "We currently carry out medical outreach in the paediatric unit of Lagos State University Teaching Hospital, with plans to expand gradually to general hospitals across Lagos- one hospital at a time-until we are able to reach children in need throughout the state.  ",
+    description: "We currently carry out medical outreach in the paediatric unit of a teaching hospital in Ikeja, with plans to expand gradually to general hospitals across Lagos- one hospital at a time-until we are able to reach children in need throughout the state.  ",
     image: "/closeup-shot-boy-doctor-wearing-sanitary-masks.jpg",
   },
   {

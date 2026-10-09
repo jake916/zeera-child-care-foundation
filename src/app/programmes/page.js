@@ -75,8 +75,7 @@ export default function ProgrammesPage() {
                   <h3 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">Hospital Outreach Programme</h3>
                   <p className="text-primary font-bold text-xl mb-8 italic">"At the bedside. When it matters most."</p>
                   <p className="text-foreground/60 text-lg leading-relaxed mb-8">
-                    Our flagship programme operates primarily at the Lagos State University Teaching Hospital 
-                    (LASUTH) Paediatric Unit, one of the busiest government hospitals in Lagos. 
+                    Our flagship programme operates primarily at the paediatric unit of agovernment hosital in Lagos, one of the busiest government hospitals in Lagos. 
                     Our team regularly visits the wards, identifying children from vulnerable families 
                     who cannot afford the cost of treatment.
                   </p>

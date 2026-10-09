@@ -102,7 +102,7 @@ export default function Home() {
                       The child's mum was so distressed. But because of this foundation last time I called, she said the child is walking fine now.
                     </p>
                     <p className="text-white/80 text-xl font-medium">
-                      - Nurse C, <span className="text-primary/80">LASUTH Paediatric Unit</span>
+                      - Matron C, <span className="text-primary/80">A teaching hospital in Ikeja Paediatric Unit</span>
                     </p>
                   </div>
                 </div>
